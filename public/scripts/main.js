@@ -47,7 +47,7 @@ var CommentList = React.createClass({
     this.setState({author: e.target.value});
   },
   handleTextChange: function(e) {
-    this.setState({text: e.target.value});
+    this.setState({text: e.target.value});;
   },
   render: function() {
     return (
@@ -82,7 +82,7 @@ var CommentList = React.createClass({
             }
         });
 
-        ReactDOM.render( 
+        ReactDOM.render(
             < CommentBox url = "/api/comments" pollInterval = { 2000 } />,
             document.getElementById('content')
         );
